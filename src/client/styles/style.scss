@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f8f8f8;
+    background-image: url("../assets/images/travel.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: auto;
+  }
+  
+  .travel-planner {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* زيادة تأثير الظل */
+    overflow: hidden;
+    width: 600px;
+    margin-top: 20px; /* Added margin to prevent it from being at the top */
+  }
+  
+  h1 {
+    font-size: 26px; /* زيادة حجم الخط */
+    padding: 16px;
+    text-align: center;
+    margin: 0;
+    border-bottom: 2px solid #ddd; /* زيادة سمك الخط الفاصل */
+    background-color: #fafafa; /* تغيير خلفية العنوان */
+  }
+  
+  .trip-card {
+    display: flex;
+    padding: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease; /* إضافة تأثير الانتقال */
+  }
+  
+  .trip-card:hover {
+    background-color: #f0f0f0; /* تغيير لون الخلفية عند التحويم */
+  }
+  
+  .trip-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 16px;
+    object-fit: cover; /* الحفاظ على نسب العرض والارتفاع */
+  }
+  
+  .trip-details {
+    flex: 1;
+  }
+  
+  .trip-details p {
+    margin: 4px 0;
+    font-size: 15px; /* زيادة حجم الخط */
+    color: #333;
+  }
+  
+  .trip-buttons {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .trip-buttons button {
+    padding: 10px 15px; /* زيادة الحشوة */
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px; /* زيادة استدارة الزوايا */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* إضافة تأثير الانتقال */
+  }
+  
+  .save-trip {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .save-trip:hover {
+    background-color: #45a049; /* لون أغمق عند التحويم */
+  }
+  
+  .remove-trip {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .remove-trip:hover {
+    background-color: #f5c6cb; /* لون أغمق عند التحويم */
+  }
+  
+  .trip-info {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .trip-weather {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .add-trip {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    flex-direction: column;
+  }
+  
+  .add-trip-element {
+    margin-top: 10px;
+  }
+  
+  .add-trip-button {
+    padding: 10px 15px; /* زيادة الحشوة */
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px; /* زيادة استدارة الزوايا */
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s ease; /* إضافة تأثير الانتقال */
+  }
+  
+  .add-trip-button:hover {
+    background-color: #45a049; /* لون أغمق عند التحويم */
+  }
+  
+  .list {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  
+  .list-item {
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    display: flex;
+    flex: 0 0 auto;
+    width: auto;
+    align-items: center;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease; /* إضافة تأثير الانتقال */
+  }
+  
+  .list-item:hover {
+    background-color: #d3d3d3; /* لون أغمق عند التحويم */
+  }
+  
+  .list-item p {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-item span {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-right: 3px;
+    border-radius: 50%;
+  }
+  
+  #add-item {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 480px) {
+    .travel-planner {
+      width: 300px;
+    }
+    .trip-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
